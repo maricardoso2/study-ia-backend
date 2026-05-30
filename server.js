@@ -101,6 +101,7 @@ app.post('/api/login', (req, res) => {
 });
 
 // Inicialização do Servidor Local
-app.listen(PORT, () => {
-    console.log(`Servidor do Study.ia a correr com sucesso na porta ${PORT}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Servidor do Study.ia rodando com sucesso na porta ${PORT}`);
 });
