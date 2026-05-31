@@ -105,7 +105,7 @@ app.post('/api/login', (req, res) => {
 
 // Rota raiz para evitar o erro "Cannot GET /" quando acessar o link puro
 app.get('/', (req, res) => {
-    res.send("API do Study.ia está online e rodando!");
+    res.send("API do Estudia está online e rodando!");
 });
 
 // Inicialização do Servidor
